@@ -1,17 +1,14 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-
-body,
-html {
+body, html {
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 #content {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
@@ -19,9 +16,7 @@ html {
     height: 100%;
 }
 
-header,
-footer,
-main {
+header, footer, main {
     padding: 20px 10%;
     box-shadow: 0 0 3px black;
 }
@@ -30,30 +25,39 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
 }
-
-header h1,
-.top-links {
+header h1, .top-links {
     flex: .4;
 }
-
 .top-links ul {
     display: flex;
     gap: 30px;
     justify-content: flex-end;
     font-size: 1.2em;
 }
-
-.top-links .links:hover {
-    font-weight: 700;
+.contact-banner {
+    background-color: rgba(0, 0, 0, .7);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
+.heading {
+    margin: 15px 0;
+}
+.contact {
+    text-align: center;
+}
+
 .card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
+.mail {
+    align-items: center;
+}
 .items {
     box-shadow: 0 0 3px black;
     padding: 20px;
@@ -62,14 +66,12 @@ header h1,
     gap: 15px;
     border-radius: 15px;
 }
-
-.items:hover {
-    transform: scale(1.05);
-    margin: 3px;
+.banner img {
+    border-radius: 15px;
 }
 
-footer ul {
+footer ul{
     display: flex;
     gap: 30px;
     justify-content: center;
-}
+} */

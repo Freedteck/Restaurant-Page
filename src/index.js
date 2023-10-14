@@ -1,31 +1,29 @@
-import './style.css';
-import Home from './js/home';
-import { contactPage } from './js/contact';
-import { menuPage } from './js/menu';
+import './home.css'
+import { banner } from './home';
+import { heading } from './home';
+import itemList from './home';
 
-// Declaring Variables
+import { insert } from './contact';
+
 const main = document.querySelector('main');
-const contactBtn = document.getElementById('contact');
-const home = document.getElementById('home');
-const menu = document.getElementById('menu');
 
-main.appendChild(Home());
+main.appendChild(banner)
+main.appendChild(heading)
+main.appendChild(itemList())
 
-// Event Listeners
+const contactBtn = document.getElementById('contact')
+const home = document.getElementById('home')
+
 home.addEventListener('click', (e) => {
-    main.innerHTML = '';
-    main.appendChild(Home());
-    e.preventDefault();
-});
-
+    main.innerHTML = ''
+    main.appendChild(banner)
+    main.appendChild(heading)
+    main.appendChild(itemList())
+    e.preventDefault()
+})
 contactBtn.addEventListener('click', (e) => {
-    main.innerHTML = '';
-    main.appendChild(contactPage());
-    e.preventDefault();
-});
 
-menu.addEventListener('click', (e) => {
-    main.innerHTML = '';
-    main.appendChild(menuPage());
-    e.preventDefault();
+    main.innerHTML = ''
+    main.appendChild(insert())
+    e.preventDefault()
 })
